@@ -11,7 +11,13 @@ class _AddNewPageState extends State<AddNewPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       : Center(child: Text("Add New Page")),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Center(
+            child: Text("Add New Page"),
+          ),
+        ),
+      ),
     );
   }
 }
